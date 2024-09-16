@@ -51,3 +51,35 @@ getWeather()
     .catch(onError)
     .finally(onFinally);
 
+// working with apis
+function doSomething()
+{
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            fetch("https://reqres.in/api/users/2")
+                .then(res=>{
+                    if(res.status === 200)
+                    {
+                       return res.json();
+                    }
+                    else
+                    {
+                        reject("Error: " + res.status);
+                    }
+                })
+                .then(data=>resolve(data))
+                .catch(err=>reject(err));
+        }, 1000)
+    })
+}
+
+doSomething()
+    .then(res=>{
+        const id = res.data.id;
+        const email= res.data.email;
+        console.log(res);
+        console.log(id);
+        console.log(email);
+    })
+
+
