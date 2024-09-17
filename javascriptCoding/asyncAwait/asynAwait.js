@@ -24,3 +24,4 @@ const myself={
     }
 }
 console.log(myself);
+

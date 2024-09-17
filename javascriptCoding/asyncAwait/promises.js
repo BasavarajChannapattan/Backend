@@ -81,5 +81,3 @@ doSomething()
         console.log(id);
         console.log(email);
     })
-
-
