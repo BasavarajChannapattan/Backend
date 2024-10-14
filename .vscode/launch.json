@@ -25,7 +25,7 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}\\javascriptCoding\\BasicPrograms\\ControlFlow\\condition.js"
+      "program": "${workspaceFolder}\\javascriptCoding\\dataStruct\\Arrays.js"
     }
   ]
 }
