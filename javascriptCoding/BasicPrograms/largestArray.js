@@ -1,18 +1,16 @@
 
 function largestArray(arr) {
+    let number = arr[0];
 
-    let largestArr=arr[0];
-
-    for(let num of arr)
-    {
-        if(num>largestArr)
+    for (let num of arr) {
+        if(num>number)
         {
-            largestArr=num;
+            number = num;
         }
     }
 
-    return largestArr;
+    return number;
 }
 
 
-console.log(largestArray([1,2,3,5,7,9]));
+console.log(largestArray([1,45,12,679,245,2]));
